@@ -53,7 +53,7 @@ export default function ServicePackages() {
         {/* Cards */}
         <div className="flex gap-8 flex-wrap justify-center">
           {plans.map((plan, index) => (
-            <Card
+            <Card key={index}
               className={`relative overflow-visible w-[300px] bg-slate-800 text-white p-6 border
   ${plan.popular ? "border-red-500 scale-105 shadow-xl" : "border-slate-700"}`}
             >

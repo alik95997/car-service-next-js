@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Zap, ChevronRight } from "lucide-react";
+import { Zap, ChevronRight, Droplet, Scan, Disc, Circle, Battery, Car } from "lucide-react";
 
 const  SpecializationCard = ({ ...props })=> {
   return (
@@ -49,7 +49,7 @@ function Specialization() {
         {/* cards area */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full">
           <SpecializationCard
-            icon={<Zap />}
+            icon={<Droplet />}
             title="Oil Change"
             desc="Complete synthetic or conventional oil and filter replacement to keep your engine running smoothly."
             action="Learn More"
@@ -57,7 +57,7 @@ function Specialization() {
           />
 
           <SpecializationCard
-            icon={<Zap />}
+            icon={<Scan />}
             title="Engine Diagnostics"
             desc="Advanced computer scanning to
 pinpoint performance issues and
@@ -67,7 +67,7 @@ sensor failures with 100% accuracy."
           />
 
           <SpecializationCard
-            icon={<Zap />}
+            icon={<Disc />}
             title="Brake Repair"
             desc="Full inspection and replacement of
 pads, rotors, and fluid to ensure your
@@ -77,7 +77,7 @@ safety on every journey."
           />
 
           <SpecializationCard
-            icon={<Zap />}
+            icon={<Battery  />}
             title="Tire Replacement"
             desc="Precision tire fitting, computerized
 balancing, and digital alignment for
@@ -87,7 +87,7 @@ optimal road grip and fuel efficiency."
           />
 
           <SpecializationCard
-            icon={<Zap />}
+            icon={<Car />}
             title="Battery Service"
             desc="Load testing, terminal cleaning, and
 replacement with premium long-life
