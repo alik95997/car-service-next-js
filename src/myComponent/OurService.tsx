@@ -42,7 +42,7 @@ const plans = [
 
 export default function ServicePackages() {
   return (
-    <section className="w-full flex justify-center py-20 bg-black">
+    <section className="w-full flex justify-center py-20 bg-[#0F172A] ">
       <div className="max-w-6xl w-full flex flex-col items-center gap-12">
         {/* Heading */}
         <div className="text-center">

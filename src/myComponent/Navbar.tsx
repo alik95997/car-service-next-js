@@ -7,7 +7,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full flex justify-center ">
+    <div className="w-full flex justify-center bg-[#0F172A]">
       <header className="max-w-6xl w-full px-4 py-4">
 
         <div className="flex justify-between items-center">
@@ -30,7 +30,7 @@ function Navbar() {
           <div className="flex items-center gap-3">
 
             <div className="hidden md:block">
-              <Button variant="destructive">Book Service</Button>
+              <Button variant="red">Book Service</Button>
             </div>
 
             {/* Hamburger */}

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 function BookNow() {
   return (
-    <section className="w-full flex  py-12 justify-center">
+    <section className="w-full flex  py-12 justify-center bg-[#0F172A]">
       {/* wrapper */}
       <div className="max-w-6xl w-full flex flex-col md:flex-row rounded-lg  overflow-hidden">
         {/* left */}

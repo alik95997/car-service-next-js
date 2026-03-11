@@ -10,7 +10,7 @@ import whychooseUsImage from "../../public/Image.png";
 
 const WhyChooseUsCard = ({ ...props }) => {
   return (
-    <Card className="max-w-xs h-40">
+    <Card className="bg-[#1E293B] max-w-xs h-40">
       <CardHeader>
         <CardTitle className="text-red-500">{props.icon}</CardTitle>
         <CardTitle>{props.title}</CardTitle>
@@ -22,7 +22,7 @@ const WhyChooseUsCard = ({ ...props }) => {
 
 function WhyChooseUs() {
   return (
-    <div className="w-full flex justify-center py-12 px-4">
+    <div className="w-full flex justify-center py-12 px-4 bg-[#0F172A]">
       <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10">
 
         {/* LEFT */}

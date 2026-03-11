@@ -26,7 +26,7 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <main className="relative w-full flex justify-center py-16">
+    <main className="relative w-full flex justify-center py-16 bg-[#0F172A]">
       <div className="max-w-6xl w-full flex flex-col items-center gap-12 px-4">
 
         {/* Title */}

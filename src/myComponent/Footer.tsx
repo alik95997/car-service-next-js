@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="w-full flex justify-center py-12 bg-[#0f172a]">
+    <footer className="w-full flex justify-center py-12 bg-[#0F172A]">
       <section className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
 
         {/* Logo Section */}

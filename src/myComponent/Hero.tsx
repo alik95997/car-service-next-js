@@ -5,12 +5,12 @@ import heroImage from "../../public/Image+Background+Border+Shadow.png";
 
 function Hero() {
   return (
-    <div className="w-full flex justify-center px-4">
+    <div className="w-full flex justify-center px-4 bg-[#0F172A]">
       <main className="max-w-6xl w-full flex flex-col lg:flex-row items-center gap-10 py-10">
         {/* LEFT CONTENT */}
         <div className="flex flex-col gap-6 text-center lg:text-left">
           <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-            <Button variant="destructive" className="flex gap-2 items-center">
+            <Button variant="red" className="flex gap-2 items-center">
               Certified Mechanics <CircleCheck size={16} />
             </Button>
 
@@ -36,7 +36,7 @@ function Hero() {
 
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <Button
-              variant="destructive"
+              variant="red"
               className="flex items-center gap-2 py-4 px-8"
             >
               Book Appointment <Calendar size={18} />

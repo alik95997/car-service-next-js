@@ -11,7 +11,7 @@ import { Zap, ChevronRight } from "lucide-react";
 
 const  SpecializationCard = ({ ...props })=> {
   return (
-    <Card>
+    <Card className="bg-[#1E293B]">
       <CardHeader>
         <CardTitle className="text-red-500">{props.icon}</CardTitle>
         <CardTitle>{props.title}</CardTitle>
@@ -29,7 +29,7 @@ const  SpecializationCard = ({ ...props })=> {
 
 function Specialization() {
   return (
-    <main className="w-full  flex justify-center py-12">
+    <main className="w-full  flex justify-center py-12 bg-[#0F172A]">
       {/* wrapper */}
       <div className="max-w-6xl w-full flex flex-col gap-6 items-center px-4">
         <div className="text-center max-w-2xl">
