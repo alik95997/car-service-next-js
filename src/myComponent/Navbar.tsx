@@ -1,17 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Toolbox } from "lucide-react";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full flex justify-center bg-[#0F172A]">
+    <div id="navbar" className="w-full flex justify-center bg-[#0F172A] fixed top-0 z-50">
       <header className="max-w-6xl w-full px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-xl font-bold">AUTOPRO</div>
+          <div className="text-xl font-bold flex gap-2 items-center"><Toolbox className="text-red-500" /> AUTOPRO</div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:block">
@@ -38,7 +38,9 @@ function Navbar() {
           <div className="flex items-center gap-3">
             <div className="hidden md:block">
               <a href="#book-now" className="flex items-center gap-2">
-                <Button variant="red">Book Service</Button>
+                <Button variant="red" className="cursor-pointer px-5 py-2">
+                  Book Service
+                </Button>
               </a>
             </div>
 

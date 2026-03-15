@@ -1,15 +1,21 @@
+"use client";
 import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
+import dayjs, { Dayjs } from "dayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
+import SelectServiceType from "@/components/ui/SelectServiceType";
+import TextField from "@mui/material/TextField";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+
 function BookNow() {
+  const [value, setValue] = React.useState<Dayjs | null>(
+    dayjs("2022-04-17T15:30"),
+  );
+
   return (
     <section
       id="book-now"
@@ -36,56 +42,112 @@ function BookNow() {
         </section>
         {/* Right  */}
         <section className=" bg-[#334155]">
-          <form className=" p-[48px] grid grid-cols-1 md:grid-cols-2 gap-4">
+          <form className=" p-12 grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Row 1 */}
             <div className="flex flex-col gap-2">
-              <label>Email</label>
-              <input
-                type="text"
-                placeholder="First Name"
-                className="border p-2 rounded"
+              <TextField
+                id="outlined-basic"
+                label="Name"
+                variant="outlined"
+                sx={{
+                  "& .MuiInputBase-input": { color: "white" },
+                  "& .MuiInputLabel-root": { color: "white" },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "white" },
+                    "&:hover fieldset": { borderColor: "white" },
+                    "&.Mui-focused fieldset": { borderColor: "white" },
+                  },
+                }}
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label>Last Name</label>
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="border p-2 rounded"
+              <TextField
+                id="outlined-email"
+                label="Email"
+                variant="outlined"
+                type="email"
+                placeholder="Email"
+                sx={{
+                  "& .MuiInputBase-input": { color: "white" },
+                  "& .MuiInputLabel-root": { color: "white" },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "white" },
+                    "&:hover fieldset": { borderColor: "white" },
+                    "&.Mui-focused fieldset": { borderColor: "white" },
+                  },
+                }}
               />
             </div>
 
             {/* Row 2 */}
-            <div className="flex  flex-col gap-2  md:col-span-2">
-              <label>Email</label>
-              <input
-                type="email"
-                placeholder="Email"
-                className="border p-2 rounded "
-              />
+            <div className="flex  flex-col gap-2  ">
+              <SelectServiceType />
             </div>
 
             {/* Row 3 */}
-            <div className="flex flex-col md:col-span-2 gap-2">
-              <label>Service Type</label>
-              <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Theme" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectItem value="Oil Change">Oil Change</SelectItem>
-                    <SelectItem value="Car Wash">Car Wash</SelectItem>
-                    <SelectItem value="system">System</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
+            <div className="flex flex-col gap-2 border border-white">
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DateTimePicker
+                  label="Select Date & Time"
+                  value={value}
+                  onChange={(newValue) => setValue(newValue)}
+                  slotProps={{
+                    textField: {
+                      fullWidth: true, // Makes it take up 100% width
+                      sx: {
+                        // Input Text Color
+                        "& .MuiInputBase-input": { color: "white" },
+                        // Label Color
+                        "& .MuiInputLabel-root": { color: "white" },
+                        "& .MuiInputLabel-root.Mui-focused": { color: "white" },
+                        // Border Logic
+                        "& .MuiOutlinedInput-root": {
+                          "& fieldset": { borderColor: "white" },
+                          "&:hover fieldset": { borderColor: "white" },
+                          "&.Mui-focused fieldset": { borderColor: "white" },
+                        },
+                        // Icon Color
+                        "& .MuiSvgIcon-root": { color: "white" },
+                      },
+                    },
+                  }}
+                
+                />
+              </LocalizationProvider>
             </div>
 
             {/* Row 4 */}
-            <div className="flex flex-col md:col-span-2 gap-2">
-              <label htmlFor="">PREFERRED DATE</label>
-              <input type="date" className="border p-2 rounded " />
+            <div className="flex flex-col gap-2">
+              <TextField
+                id="outlined-basic"
+                label="Car Name"
+                variant="outlined"
+                sx={{
+                  "& .MuiInputBase-input": { color: "white" },
+                  "& .MuiInputLabel-root": { color: "white" },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "white" },
+                    "&:hover fieldset": { borderColor: "white" },
+                    "&.Mui-focused fieldset": { borderColor: "white" },
+                  },
+                }}
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <TextField
+                id="outlined-basic"
+                label="Car Model"
+                variant="outlined"
+                sx={{
+                  "& .MuiInputBase-input": { color: "white" },
+                  "& .MuiInputLabel-root": { color: "white" },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "white" },
+                    "&:hover fieldset": { borderColor: "white" },
+                    "&.Mui-focused fieldset": { borderColor: "white" },
+                  },
+                }}
+              />
             </div>
             <div className="flex flex-col md:col-span-2 gap-2">
               <Button className="py-5" variant="red">

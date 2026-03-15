@@ -13,7 +13,6 @@ function Footer() {
   return (
     <footer className="w-full flex justify-center py-12 bg-[#0F172A]">
       <section className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
-
         {/* Logo Section */}
         <div className="flex flex-col gap-3">
           <span className="flex items-center gap-2 font-bold text-lg">
@@ -39,11 +38,11 @@ function Footer() {
         <div className="flex flex-col gap-2">
           <span className="font-bold text-lg">Quick Links</span>
           <ul className="flex flex-col gap-1 text-gray-400">
-            <li>Home</li>
-            <li>Service</li>
-            <li>Pricing</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li><a href="#navbar" className="hover:text-red-500"> Home</a></li>
+            <li><a href="#services" className="hover:text-red-500"> Service</a></li>
+            <li><a href="#pricing" className="hover:text-red-500"> Pricing</a></li>
+            <li><a href="#about" className="hover:text-red-500"> About Us</a></li>
+            <li><a href="#contact" className="hover:text-red-500"> Contact</a></li>
           </ul>
         </div>
 
@@ -78,7 +77,6 @@ function Footer() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-
       </section>
     </footer>
   );

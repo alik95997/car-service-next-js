@@ -5,7 +5,7 @@ import heroImage from "../../public/Image+Background+Border+Shadow.png";
 
 function Hero() {
   return (
-    <div className="w-full flex justify-center px-4 bg-[#0F172A]">
+    <div className="w-full flex justify-center px-4 bg-[#0F172A] mt-16">
       <main className="max-w-6xl w-full flex flex-col lg:flex-row items-center gap-10 py-10">
         {/* LEFT CONTENT */}
         <div className="flex flex-col gap-6 text-center lg:text-left">
@@ -35,12 +35,14 @@ function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-            <Button
-              variant="red"
-              className="flex items-center gap-2 py-4 px-8"
-            >
-              Book Appointment <Calendar size={18} />
-            </Button>
+            <a href="#book-now">
+              <Button
+                variant="red"
+                className="flex items-center gap-2 py-4 px-8 cursor-pointer"
+              >
+                Book Appointment <Calendar size={18} />
+              </Button>
+            </a>
 
             <Button variant="secondary">Get Free Quote</Button>
           </div>
