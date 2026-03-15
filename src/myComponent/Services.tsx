@@ -7,9 +7,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Zap, ChevronRight, Droplet, Scan, Disc, Circle, Battery, Car } from "lucide-react";
+import {
+  Zap,
+  ChevronRight,
+  Droplet,
+  Scan,
+  Disc,
+  Circle,
+  Battery,
+  Car,
+} from "lucide-react";
 
-const  SpecializationCard = ({ ...props })=> {
+const SpecializationCard = ({ ...props }) => {
   return (
     <Card className="bg-[#1E293B]">
       <CardHeader>
@@ -24,12 +33,11 @@ const  SpecializationCard = ({ ...props })=> {
       </CardContent>
     </Card>
   );
-}
+};
 
-
-function Specialization() {
+function Services() {
   return (
-    <main className="w-full  flex justify-center py-12 bg-[#0F172A]">
+    <main id="services" className="w-full  flex justify-center py-12 bg-[#0F172A]">
       {/* wrapper */}
       <div className="max-w-6xl w-full flex flex-col gap-6 items-center px-4">
         <div className="text-center max-w-2xl">
@@ -77,7 +85,7 @@ safety on every journey."
           />
 
           <SpecializationCard
-            icon={<Battery  />}
+            icon={<Battery />}
             title="Tire Replacement"
             desc="Precision tire fitting, computerized
 balancing, and digital alignment for
@@ -111,4 +119,4 @@ your car to showroom condition."
   );
 }
 
-export default Specialization;
+export default Services;

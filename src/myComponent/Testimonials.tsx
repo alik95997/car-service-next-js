@@ -31,7 +31,7 @@ const TestimonialsCard = ({ ...props }) => {
 
 function Testimonials() {
   return (
-    <main className="w-full py-12 flex justify-center bg-[#0F172A]">
+    <main id="reviews" className="w-full py-12 flex justify-center bg-[#0F172A]">
       {/* wrapper */}
       <div className="max-w-6xl w-full flex flex-col items-center gap-16">
         <div>
