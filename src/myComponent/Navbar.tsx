@@ -7,11 +7,16 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div id="navbar" className="w-full flex justify-center bg-[#0F172A] fixed top-0 z-50">
+    <div
+      id="navbar"
+      className="w-full flex justify-center bg-[#0F172A] fixed top-0 z-50"
+    >
       <header className="max-w-6xl w-full px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-xl font-bold flex gap-2 items-center"><Toolbox className="text-red-500" /> AUTOPRO</div>
+          <div className="text-xl font-bold flex gap-2 items-center">
+            <Toolbox className="text-red-500" /> AUTOPRO
+          </div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:block">
@@ -55,11 +60,21 @@ function Navbar() {
         {open && (
           <nav className="md:hidden mt-4">
             <ul className="flex flex-col gap-4">
-              <li>Home</li>
-              <li>Service</li>
-              <li>Pricing</li>
-              <li>About</li>
-              <li>Reviews</li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#services">Service</a>
+              </li>
+              <li>
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#reviews">Reviews</a>
+              </li>
               <Button variant="destructive">Book Service</Button>
             </ul>
           </nav>

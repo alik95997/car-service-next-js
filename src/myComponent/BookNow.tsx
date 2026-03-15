@@ -111,7 +111,6 @@ function BookNow() {
                       },
                     },
                   }}
-                
                 />
               </LocalizationProvider>
             </div>

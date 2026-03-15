@@ -10,7 +10,7 @@ import whychooseUsImage from "../../public/Image.png";
 
 const WhyChooseUsCard = ({ ...props }) => {
   return (
-    <Card className="bg-[#1E293B] max-w-xs h-40">
+    <Card className="bg-[#1E293B] w-full h-40">
       <CardHeader>
         <CardTitle className="text-red-500">{props.icon}</CardTitle>
         <CardTitle>{props.title}</CardTitle>
@@ -23,18 +23,17 @@ const WhyChooseUsCard = ({ ...props }) => {
 function WhyChooseUs() {
   return (
     <div className="w-full flex justify-center py-12 px-4 bg-[#0F172A]">
-      <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10 ">
         {/* LEFT */}
-        <div className="w-full flex flex-col gap-6">
+        <div className="w-full flex flex-col gap-6 items-center ">
           <div>
             <p className="text-red-500 font-semibold">THE AUTO PRO ADVANTAGE</p>
-
             <h1 className="text-3xl md:text-4xl font-bold">
               Why Choose Us For Your Car?
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 items-center justify-items-center gap-6">
             <WhyChooseUsCard
               icon={<ShieldCheck />}
               title="Certified Technicians"

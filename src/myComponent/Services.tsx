@@ -37,7 +37,10 @@ const SpecializationCard = ({ ...props }) => {
 
 function Services() {
   return (
-    <main id="services" className="w-full  flex justify-center py-12 bg-[#0F172A]">
+    <main
+      id="services"
+      className="w-full  flex justify-center py-12 bg-[#0F172A]"
+    >
       {/* wrapper */}
       <div className="max-w-6xl w-full flex flex-col gap-6 items-center px-4">
         <div className="text-center max-w-2xl">
@@ -68,8 +71,8 @@ function Services() {
             icon={<Scan />}
             title="Engine Diagnostics"
             desc="Advanced computer scanning to
-pinpoint performance issues and
-sensor failures with 100% accuracy."
+            pinpoint performance issues and
+            sensor failures with 100% accuracy."
             action="Learn More"
             actionIcon={<ChevronRight />}
           />
@@ -78,8 +81,8 @@ sensor failures with 100% accuracy."
             icon={<Disc />}
             title="Brake Repair"
             desc="Full inspection and replacement of
-pads, rotors, and fluid to ensure your
-safety on every journey."
+            pads, rotors, and fluid to ensure your
+            safety on every journey."
             action="Learn More"
             actionIcon={<ChevronRight />}
           />
@@ -88,8 +91,8 @@ safety on every journey."
             icon={<Battery />}
             title="Tire Replacement"
             desc="Precision tire fitting, computerized
-balancing, and digital alignment for
-optimal road grip and fuel efficiency."
+            balancing, and digital alignment for
+            optimal road grip and fuel efficiency."
             action="Learn More"
             actionIcon={<ChevronRight />}
           />
@@ -98,8 +101,8 @@ optimal road grip and fuel efficiency."
             icon={<Car />}
             title="Battery Service"
             desc="Load testing, terminal cleaning, and
-replacement with premium long-life
-car batteries."
+            replacement with premium long-life
+            car batteries."
             action="Learn More"
             actionIcon={<ChevronRight />}
           />
@@ -108,8 +111,8 @@ car batteries."
             icon={<Zap />}
             title="Car Detailing"
             desc="Full interior deep cleaning and
-exterior ceramic coating to restore
-your car to showroom condition."
+           exterior ceramic coating to restore
+           your car to showroom condition."
             action="Learn More"
             actionIcon={<ChevronRight />}
           />

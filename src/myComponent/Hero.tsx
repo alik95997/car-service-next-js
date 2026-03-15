@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Calendar, CircleCheck, History } from "lucide-react";
+import { Calendar, CircleCheck, History, Phone } from "lucide-react";
 import heroImage from "../../public/Image+Background+Border+Shadow.png";
 
 function Hero() {
@@ -43,8 +43,15 @@ function Hero() {
                 Book Appointment <Calendar size={18} />
               </Button>
             </a>
+            <Button variant="secondary">
+              <span>
+                <Phone className="text-red-500" />
+              </span>
+              <a href="tel:+15551234567 " className="text-white hover:text-red-500">
 
-            <Button variant="secondary">Get Free Quote</Button>
+              +1 (555) 123-4567
+              </a>
+            </Button>
           </div>
         </div>
 

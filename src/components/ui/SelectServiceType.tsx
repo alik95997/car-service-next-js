@@ -14,7 +14,6 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
     },
   },
 };
@@ -48,19 +47,25 @@ export default function SelectServiceType() {
 
   return (
     <div>
-      <FormControl sx={{  width: 220,height: 20,
-        '& .MuiInputBase-input': { color: 'white' },
-        '& .MuiInputLabel-root': { color: 'white' },
-        '& .MuiOutlinedInput-root': {
-          '& fieldset': { borderColor: 'white' },
-          '&:hover fieldset': { borderColor: 'white' },
-          '&.Mui-focused fieldset': { borderColor: 'white' },
-        },
-        '& .MuiMenuItem-root': { color: 'white' },
-        '& .MuiPaper-root': { backgroundColor: '#334155' },
-      }}>
+      <FormControl
+        sx={{
+          width: "100%",
+          height: 20,
+          mb: 5,
+          "& .MuiInputBase-input": { color: "white" },
+          "& .MuiInputLabel-root": { color: "white" },
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": { borderColor: "white" },
+            "&:hover fieldset": { borderColor: "white" },
+            "&.Mui-focused fieldset": { borderColor: "white" },
+          },
+          "& .MuiMenuItem-root": { color: "white" },
+          "& .MuiPaper-root": { backgroundColor: "#334155" },
+        }}
+      >
         <InputLabel id="demo-multiple-checkbox-label">Service Type</InputLabel>
         <Select
+          fullWidth
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
